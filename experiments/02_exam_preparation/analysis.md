@@ -17,3 +17,16 @@
 - Lab Report: References Azure billing screenshots alongside NotebookLM output.
 - Time Savings: 30 sec query replaces 15/20 mins of manual PDF searching.
 - Citation Ready: Auto-generated references meet academic integrity requirements.
+
+### Prompt: "Summarize the 5 NIST cloud characteristics with 1 Azure cost example each. Format as a bulleted list with <100 words per characteristic. Include source citations."
+
+**Output**: [response3.txt], [Screenshot3.png]
+**Accuracy assessment and Usefulness**:
+
+- Accuracy Assurance: Direct quotes from NIST eliminate misinterpretation risk.
+- Time Savings: 5-minute query replaces 30+ minutes of manual PDF searching.
+- Citation Ready: Pre-formatted references meet academic integrity requirements.
+
+**Outcome**:
+*Student enters exam with precise, source-backed answers for 20% of the test questions.*
+
