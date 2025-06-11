@@ -1,0 +1,20 @@
+Role-Based Access Control (RBAC) is a fundamental security mechanism within cloud computing, particularly relevant for managing access to Azure services like Logic Apps, Blob Storage, and Static Web Apps.
+
+Here's how it links to the provided sources:
+
+**1. Azure Implementation Steps (Conceptual, based on workshop service context):**
+RBAC determines "what you can do" after authentication. It is a core component of Identity and Access Management (IAM), which handles authorization and user management, including "Role / privilege management". While the workshop instructions focus on creating the services (e.g., creating Azure Storage accounts, Logic App resources, and Static Web Apps within specific resource groups), they do not detail RBAC configuration. However, any resource deployed in Azure, such as the Blob Storage for static sites (Week 4 workshop) or Logic Apps (Week 3 & 4 workshops), inherently leverages Azure's RBAC system, often managed via Azure Active Directory.
+
+To implement RBAC for these services:
+*   You would typically **navigate to the specific Azure resource** (e.g., your created Storage Account, Logic App, or Static Web App) in the Azure portal.
+*   Then, you would locate the **"Access control (IAM)" blade** within that resource's settings. Here, you can **assign roles** (e.g., "Storage Blob Data Contributor" for a storage account, "Logic App Contributor" for a logic app) to users, groups, or managed identities to define their permissions for that specific resource or the resource group it belongs to.
+
+**2. Screenshot-worthy UI Locations:**
+*   **Azure Portal Search Bar**: Type "Storage accounts", "Logic apps", or "Static Web Apps" to find your services.
+*   **Resource Group Blade**: Navigate to a resource group (e.g., `BUS5001-Week-5`) and locate its "Access control (IAM)" section.
+*   **Individual Resource's "Access control (IAM)" Blade**: Once you select a specific Storage Account, Logic App, or Static Web App, look for the "Access control (IAM)" option in the left-hand navigation pane. This blade visually shows current role assignments and allows you to "Add role assignment" to configure RBAC.
+
+**3. Exam-relevant Security Tradeoffs:**
+*   **Benefit - Principle of Least Privilege**: RBAC is crucial for enforcing the **"Principle of Least Privilege"**. This means users and systems are granted only the minimum permissions necessary to perform their tasks, reducing the "risk" of broad access being exploited if an account is compromised. It acts as a "security control" to counter threats like "insufficient authorization".
+*   **Risk - Lack of Governance**: A significant tradeoff or risk is the **lack of effective data governance**. Without proper RBAC, organizations face severe consequences like those seen in major data breaches (e.g., Yahoo, Equifax, Marriott, Facebook) which resulted in billions in estimated losses, payouts, and damaged reputations. These incidents highlight the vulnerabilities arising from "poor security architecture" or "security policy weakness".
+*   **Management Overhead (Implicit Tradeoff)**: While not explicitly detailed as a tradeoff in the provided sources, implementing granular RBAC requires careful planning and ongoing management to define appropriate roles and assign them correctly. However, this overhead is a necessary investment to prevent the catastrophic impacts associated with a lack of proper authorization and data governance.
